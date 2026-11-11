@@ -19,7 +19,14 @@ public class RekeningEnkapsulasi {
         this.namaBank = namaBank;
         this.saldo = saldoAwal;
     }
-
+    
+    public void setsaldo(){
+     if(saldo<1000){
+         System.out.println("Saldo Tidak Boleh Minus!!");
+     } else {
+         System.out.println("Saldo Tidak Valid!!");
+        }
+    }
     // Getter
     public String getNomorRekening() {
         return nomorRekening;
